@@ -26,11 +26,18 @@ public class Haus {
         this.antre = antre;
     }
 
+    public Balkon getBalkon() {
+        return balkon;
+    }
 
+    public void setBalkon(Balkon balkon) {
+        this.balkon = balkon;
+    }
 
     private Salon salon;
     private Mutfak mutfak;
     private Antre antre;
+    private Balkon balkon;
 
 }
 
