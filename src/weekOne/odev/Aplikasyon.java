@@ -4,10 +4,16 @@ public class Aplikasyon {
     public static void main(String[] args) {
         Haus aliEv = new Haus();
         Mutfak aliMutfak = new Mutfak();
+        Antre aliAntre = new Antre();
         Televizyon mutfakTv = new Televizyon();
+        Sandalye sandalyeAntre = new Sandalye();
         mutfakTv.setName("Toshiba");
+        sandalyeAntre.setName("Tabure");
         aliMutfak.setTelevizyon(mutfakTv);
+        aliAntre.setSandalye(sandalyeAntre);
         aliEv.setMutfak(aliMutfak);
-        System.out.println(aliEv.getMutfak().getTelevizyon().getName());
+        aliEv.setAntre(aliAntre);
+
+        System.out.println(aliEv.getMutfak().getTelevizyon().getName() + " "+ aliEv.getAntre().getSandalye().getName());
     }
 }
